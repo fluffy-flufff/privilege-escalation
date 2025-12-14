@@ -5,7 +5,5 @@ find -L /challenge -type f -exec chmod 0444 {} +
 
 mkdir -p /challenge/bin
 ln -sf /usr/bin/vim /challenge/bin/vim
-ln -sf /usr/bin/nvim /challenge/bin/nvim
 
 chmod u+s /usr/bin/vim
-chmod u+s /usr/bin/nvim
