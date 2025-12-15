@@ -181,6 +181,8 @@ challenges:
       name: jrunscript
     - id: ksh
       name: ksh
+    - id: ksshell
+      name: ksshell
     - id: ld-so
       name: ld.so
     - id: less
