@@ -1,0 +1,16 @@
+#!/bin/bash
+
+rm /challenge/.init
+find -L /challenge -type f -exec chmod 0444 {} +
+
+mkdir -p /challenge/bin
+ln -sf /usr/lib/nagios/plugins/check_ssl_cert /challenge/bin/check_ssl_cert
+ln -sf /usr/bin/sudo /challenge/bin/sudo
+
+cat > /etc/sudoers.d/hacker <<'EOF'
+hacker ALL=(root) NOPASSWD: /usr/lib/nagios/plugins/check_ssl_cert
+EOF
+
+chmod 440 /etc/sudoers.d/hacker
+
+chmod u+s /usr/bin/sudo

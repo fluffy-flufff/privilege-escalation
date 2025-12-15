@@ -1,10 +1,731 @@
 name: Sudo
+image: pwmcollege/challenge-sudo
 challenges:
+    - id: 7z
+      name: 7z
+    - id: aa-exec
+      name: aa-exec
+    - id: ab
+      name: ab
+    - id: alpine
+      name: alpine
+    - id: ansible-playbook
+      name: ansible-playbook
+    - id: ansible-test
+      name: ansible-test
+    - id: aoss
+      name: aoss
+    - id: apache2ctl
+      name: apache2ctl
+    - id: apt
+      name: apt
+    - id: apt-get
+      name: apt-get
+    - id: ar
+      name: ar
+    - id: aria2c
+      name: aria2c
+    - id: arj
+      name: arj
+    - id: arp
+      name: arp
+    - id: as
+      name: as
+    - id: ascii-xfr
+      name: ascii-xfr
+    - id: ascii85
+      name: ascii85
+    - id: ash
+      name: ash
+    - id: aspell
+      name: aspell
+    - id: at
+      name: at
+    - id: atobm
+      name: atobm
+    - id: awk
+      name: awk
+    - id: aws
+      name: aws
+    - id: base32
+      name: base32
+    - id: base58
+      name: base58
+    - id: base64
+      name: base64
+    - id: basenc
+      name: basenc
+    - id: basez
+      name: basez
+    - id: bash
+      name: bash
+    - id: batcat
+      name: batcat
+    - id: bc
+      name: bc
+    - id: bconsole
+      name: bconsole
+    - id: bpftrace
+      name: bpftrace
+    - id: bridge
+      name: bridge
+    - id: bundle
+      name: bundle
+    - id: bundler
+      name: bundler
+    - id: busctl
+      name: busctl
+    - id: busybox
+      name: busybox
+    - id: byebug
+      name: byebug
+    - id: bzip2
+      name: bzip2
+    - id: c89
+      name: c89
+    - id: c99
+      name: c99
+    - id: cabal
+      name: cabal
+    - id: capsh
+      name: capsh
+    - id: cat
+      name: cat
+    - id: cdist
+      name: cdist
+    - id: certbot
+      name: certbot
+    - id: check_by_ssh
+      name: check_by_ssh
+    - id: check_cups
+      name: check_cups
+    - id: check_log
+      name: check_log
+    - id: check_memory
+      name: check_memory
+    - id: check_raid
+      name: check_raid
+    - id: check_ssl_cert
+      name: check_ssl_cert
+    - id: check_statusfile
+      name: check_statusfile
+    - id: chmod
+      name: chmod
+    - id: choom
+      name: choom
+    - id: chown
+      name: chown
+    - id: chroot
+      name: chroot
+    - id: clamscan
+      name: clamscan
+    - id: cmp
+      name: cmp
+    - id: cobc
+      name: cobc
+    - id: column
+      name: column
+    - id: comm
+      name: comm
+    - id: composer
+      name: composer
+    - id: cowsay
+      name: cowsay
+    - id: cowthink
+      name: cowthink
+    - id: cp
+      name: cp
+    - id: cpan
+      name: cpan
+    - id: cpio
+      name: cpio
+    - id: cpulimit
+      name: cpulimit
+    - id: crash
+      name: crash
+    - id: crontab
+      name: crontab
+    - id: csh
+      name: csh
+    - id: csplit
+      name: csplit
+    - id: csvtool
+      name: csvtool
+    - id: cupsfilter
+      name: cupsfilter
+    - id: curl
+      name: curl
+    - id: cut
+      name: cut
+    - id: dash
+      name: dash
+    - id: date
+      name: date
+    - id: dc
+      name: dc
+    - id: dd
+      name: dd
+    - id: debugfs
+      name: debugfs
+    - id: dialog
+      name: dialog
+    - id: diff
+      name: diff
+    - id: dig
+      name: dig
+    - id: distcc
+      name: distcc
+    - id: dmesg
+      name: dmesg
+    - id: dmidecode
+      name: dmidecode
+    - id: dmsetup
+      name: dmsetup
+    - id: dnf
+      name: dnf
+    - id: docker
+      name: docker
+    - id: dosbox
+      name: dosbox
+    - id: dotnet
+      name: dotnet
+    - id: dpkg
+      name: dpkg
+    - id: dvips
+      name: dvips
+    - id: easy_install
+      name: easy_install
+    - id: ed
+      name: ed
+    - id: efax
+      name: efax
+    - id: elvish
+      name: elvish
+    - id: emacs
+      name: emacs
+    - id: enscript
+      name: enscript
+    - id: env
+      name: env
+    - id: eqn
+      name: eqn
+    - id: espeak
+      name: espeak
+    - id: ex
+      name: ex
+    - id: exiftool
+      name: exiftool
+    - id: expand
+      name: expand
+    - id: expect
+      name: expect
+    - id: facter
+      name: facter
+    - id: file
+      name: file
+    - id: find
+      name: find
+    - id: fish
+      name: fish
+    - id: flock
+      name: flock
+    - id: fmt
+      name: fmt
+    - id: fold
+      name: fold
+    - id: fping
+      name: fping
+    - id: ftp
+      name: ftp
+    - id: gawk
+      name: gawk
+    - id: gcc
+      name: gcc
+    - id: gcloud
+      name: gcloud
+    - id: gcore
+      name: gcore
+    - id: gdb
+      name: gdb
+    - id: gem
+      name: gem
+    - id: genisoimage
+      name: genisoimage
+    - id: ghc
+      name: ghc
+    - id: ghci
+      name: ghci
+    - id: gimp
+      name: gimp
+    - id: ginsh
+      name: ginsh
+    - id: git
+      name: git
+    - id: grc
+      name: grc
+    - id: grep
+      name: grep
+    - id: gtester
+      name: gtester
+    - id: gzip
+      name: gzip
+    - id: hd
+      name: hd
+    - id: head
+      name: head
+    - id: hexdump
+      name: hexdump
+    - id: highlight
+      name: highlight
+    - id: hping3
+      name: hping3
+    - id: iconv
+      name: iconv
+    - id: iftop
+      name: iftop
+    - id: install
+      name: install
+    - id: ionice
+      name: ionice
+    - id: ip
+      name: ip
+    - id: irb
+      name: irb
+    - id: ispell
+      name: ispell
+    - id: jjs
+      name: jjs
+    - id: joe
+      name: joe
+    - id: join
+      name: join
+    - id: journalctl
+      name: journalctl
+    - id: jq
+      name: jq
+    - id: jrunscript
+      name: jrunscript
+    - id: jtag
+      name: jtag
+    - id: julia
+      name: julia
+    - id: knife
+      name: knife
+    - id: ksh
+      name: ksh
+    - id: ksshell
+      name: ksshell
+    - id: ksu
+      name: ksu
+    - id: kubectl
+      name: kubectl
+    - id: latex
+      name: latex
+    - id: latexmk
+      name: latexmk
+    - id: ld-so
+      name: ld.so
+    - id: ldconfig
+      name: ldconfig
+    - id: less
+      name: less
+    - id: lftp
+      name: lftp
+    - id: links
+      name: links
+    - id: ln
+      name: ln
+    - id: loginctl
+      name: loginctl
+    - id: logsave
+      name: logsave
+    - id: look
+      name: look
+    - id: ltrace
+      name: ltrace
+    - id: lua
+      name: lua
+    - id: lualatex
+      name: lualatex
+    - id: luatex
+      name: luatex
+    - id: lwp-download
+      name: lwp-download
+    - id: lwp-request
+      name: lwp-request
+    - id: mail
+      name: mail
+    - id: make
+      name: make
+    - id: man
+      name: man
+    - id: mawk
+      name: mawk
+    - id: minicom
+      name: minicom
+    - id: more
+      name: more
+    - id: mosquitto
+      name: mosquitto
+    - id: mount
+      name: mount
+    - id: msgattrib
+      name: msgattrib
+    - id: msgcat
+      name: msgcat
+    - id: msgconv
+      name: msgconv
+    - id: msgfilter
+      name: msgfilter
+    - id: msgmerge
+      name: msgmerge
+    - id: msguniq
+      name: msguniq
+    - id: mtr
+      name: mtr
+    - id: multitime
+      name: multitime
+    - id: mv
+      name: mv
+    - id: mysql
+      name: mysql
+    - id: nano
+      name: nano
+    - id: nasm
+      name: nasm
+    - id: nawk
+      name: nawk
+    - id: nc
+      name: nc
+    - id: ncdu
+      name: ncdu
+    - id: ncftp
+      name: ncftp
+    - id: neofetch
+      name: neofetch
+    - id: nft
+      name: nft
+    - id: nice
+      name: nice
+    - id: nl
+      name: nl
+    - id: nm
+      name: nm
+    - id: nmap
+      name: nmap
+    - id: node
+      name: node
+    - id: nohup
+      name: nohup
+    - id: npm
+      name: npm
+    - id: nroff
+      name: nroff
+    - id: nsenter
+      name: nsenter
+    - id: ntpdate
+      name: ntpdate
+    - id: octave
+      name: octave
+    - id: od
+      name: od
+    - id: openssl
+      name: openssl
+    - id: openvpn
+      name: openvpn
+    - id: openvt
+      name: openvt
+    - id: pandoc
+      name: pandoc
+    - id: paste
+      name: paste
+    - id: pdb
+      name: pdb
+    - id: pdflatex
+      name: pdflatex
+    - id: pdftex
+      name: pdftex
+    - id: perf
+      name: perf
+    - id: perl
+      name: perl
+    - id: perlbug
+      name: perlbug
+    - id: pexec
+      name: pexec
+    - id: php
+      name: php
+    - id: pic
+      name: pic
+    - id: pico
+      name: pico
+    - id: pidstat
+      name: pidstat
+    - id: pip
+      name: pip
+    - id: pkexec
+      name: pkexec
+    - id: posh
+      name: posh
+    - id: pr
+      name: pr
+    - id: pry
+      name: pry
+    - id: psftp
+      name: psftp
+    - id: psql
+      name: psql
+    - id: ptx
+      name: ptx
+    - id: puppet
+      name: puppet
+    - id: python
+      name: python
+    - id: rake
+      name: rake
+    - id: rc
+      name: rc
+    - id: readelf
+      name: readelf
+    - id: red
+      name: red
+    - id: redcarpet
+      name: redcarpet
+    - id: restic
+      name: restic
+    - id: rev
+      name: rev
+    - id: rlwrap
+      name: rlwrap
+    - id: rpm
+      name: rpm
+    - id: rpmdb
+      name: rpmdb
+    - id: rpmquery
+      name: rpmquery
+    - id: rpmverify
+      name: rpmverify
+    - id: rsync
+      name: rsync
+    - id: ruby
+      name: ruby
+    - id: run-mailcap
+      name: run-mailcap
+    - id: run-parts
+      name: run-parts
+    - id: runscript
+      name: runscript
+    - id: rview
+      name: rview
+    - id: rvim
+      name: rvim
+    - id: sash
+      name: sash
+    - id: scanmem
+      name: scanmem
+    - id: scp
+      name: scp
+    - id: screen
+      name: screen
+    - id: script
+      name: script
+    - id: scrot
+      name: scrot
+    - id: sed
+      name: sed
+    - id: service
+      name: service
+    - id: setarch
+      name: setarch
+    - id: setfacl
+      name: setfacl
+    - id: setlock
+      name: setlock
+    - id: sftp
+      name: sftp
+    - id: sg
+      name: sg
+    - id: shuf
+      name: shuf
+    - id: slsh
+      name: slsh
+    - id: smbclient
+      name: smbclient
+    - id: snap
+      name: snap
+    - id: socat
+      name: socat
+    - id: soelim
+      name: soelim
+    - id: softlimit
+      name: softlimit
+    - id: sort
+      name: sort
+    - id: split
+      name: split
+    - id: sqlite3
+      name: sqlite3
+    - id: sqlmap
+      name: sqlmap
+    - id: ss
+      name: ss
+    - id: ssh
+      name: ssh
+    - id: ssh-agent
+      name: ssh-agent
+    - id: ssh-keygen
+      name: ssh-keygen
+    - id: ssh-keyscan
+      name: ssh-keyscan
+    - id: sshpass
+      name: sshpass
+    - id: start-stop-daemon
+      name: start-stop-daemon
+    - id: stdbuf
+      name: stdbuf
+    - id: strace
+      name: strace
+    - id: strings
+      name: strings
+    - id: su
+      name: su
     - id: sudo
       name: sudo
+    - id: sysctl
+      name: sysctl
+    - id: systemctl
+      name: systemctl
+    - id: systemd-resolve
+      name: systemd-resolve
+    - id: tac
+      name: tac
+    - id: tail
+      name: tail
     - id: tar
       name: tar
+    - id: task
+      name: task
+    - id: taskset
+      name: taskset
+    - id: tasksh
+      name: tasksh
+    - id: tbl
+      name: tbl
+    - id: tclsh
+      name: tclsh
+    - id: tcpdump
+      name: tcpdump
+    - id: tdbtool
+      name: tdbtool
+    - id: tee
+      name: tee
+    - id: telnet
+      name: telnet
+    - id: tex
+      name: tex
+    - id: tftp
+      name: tftp
+    - id: tic
+      name: tic
+    - id: time
+      name: time
+    - id: timedatectl
+      name: timedatectl
+    - id: timeout
+      name: timeout
+    - id: tmate
+      name: tmate
+    - id: tmux
+      name: tmux
+    - id: top
+      name: top
+    - id: torify
+      name: torify
+    - id: torsocks
+      name: torsocks
+    - id: troff
+      name: troff
+    - id: ul
+      name: ul
+    - id: unexpand
+      name: unexpand
+    - id: uniq
+      name: uniq
+    - id: unshare
+      name: unshare
+    - id: unsquashfs
+      name: unsquashfs
+    - id: unzip
+      name: unzip
+    - id: update-alternatives
+      name: update-alternatives
+    - id: uudecode
+      name: uudecode
+    - id: uuencode
+      name: uuencode
+    - id: valgrind
+      name: valgrind
+    - id: varnishncsa
+      name: varnishncsa
+    - id: vi
+      name: vi
+    - id: view
+      name: view
     - id: vigr
       name: vigr
+    - id: vim
+      name: vim
+    - id: vimdiff
+      name: vimdiff
     - id: vipw
       name: vipw
+    - id: virsh
+      name: virsh
+    - id: w3m
+      name: w3m
+    - id: wall
+      name: wall
+    - id: watch
+      name: watch
+    - id: wc
+      name: wc
+    - id: wget
+      name: wget
+    - id: whiptail
+      name: whiptail
+    - id: wireshark
+      name: wireshark
+    - id: wish
+      name: wish
+    - id: xargs
+      name: xargs
+    - id: xdg-user-dir
+      name: xdg-user-dir
+    - id: xdotool
+      name: xdotool
+    - id: xelatex
+      name: xelatex
+    - id: xetex
+      name: xetex
+    - id: xmodmap
+      name: xmodmap
+    - id: xmore
+      name: xmore
+    - id: xpad
+      name: xpad
+    - id: xxd
+      name: xxd
+    - id: xz
+      name: xz
+    - id: yash
+      name: yash
+    - id: zathura
+      name: zathura
+    - id: zip
+      name: zip
+    - id: zsh
+      name: zsh
+    - id: zsoelim
+      name: zsoelim
+    - id: zypper
+      name: zypper
