@@ -63,8 +63,6 @@ challenges:
       name: batcat
     - id: bconsole
       name: bconsole
-    - id: bpftrace
-      name: bpftrace
     - id: bridge
       name: bridge
     - id: bundle
