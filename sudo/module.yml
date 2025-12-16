@@ -173,8 +173,6 @@ challenges:
       name: dmesg
     - id: dmidecode
       name: dmidecode
-    - id: dmsetup
-      name: dmsetup
     - id: dnf
       name: dnf
     - id: docker
