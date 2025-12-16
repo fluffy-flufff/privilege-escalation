@@ -61,8 +61,6 @@ challenges:
       name: bash
     - id: batcat
       name: batcat
-    - id: bc
-      name: bc
     - id: bconsole
       name: bconsole
     - id: bpftrace
