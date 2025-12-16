@@ -97,8 +97,6 @@ challenges:
       name: check_cups
     - id: check-log
       name: check_log
-    - id: check-memory
-      name: check_memory
     - id: check-raid
       name: check_raid
     - id: check-ssl-cert
