@@ -5,16 +5,18 @@ find -L /challenge -type f -exec chmod 0444 {} +
 
 mkdir -p /challenge/bin
 ln -sf /usr/bin/gcore /challenge/bin/gcore
-ln -sf /usr/bin/gdb /challenge/bin/gdb
 ln -sf /usr/bin/sudo /challenge/bin/sudo
 
-cat > /etc/sudoers.d/hacker <<'EOF'
-hacker ALL=(root) NOPASSWD: /usr/bin/gcore
-EOF
+if [ "$(head -n 1 /run/dojo/sys/workspace/privileged)" = "0" ]; then
+    cat > /etc/sudoers.d/hacker <<-'EOF'
+	hacker ALL=(root) NOPASSWD: /usr/bin/gcore
+	EOF
 
-chmod 440 /etc/sudoers.d/hacker
+    chmod 440 /etc/sudoers.d/hacker
+else
+    passwd -d root
+fi
 
-chmod u+s /usr/bin/sudo
 passwd -d hacker
 
 env -i FLAG="$(tr -d '\n' < /flag)" /usr/bin/sleep infinity &

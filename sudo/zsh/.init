@@ -7,11 +7,14 @@ mkdir -p /challenge/bin
 ln -sf /usr/bin/zsh /challenge/bin/zsh
 ln -sf /usr/bin/sudo /challenge/bin/sudo
 
-cat > /etc/sudoers.d/hacker <<'EOF'
-hacker ALL=(root) NOPASSWD: /usr/bin/zsh
-EOF
+if [ "$(head -n 1 /run/dojo/sys/workspace/privileged)" = "0" ]; then
+    cat > /etc/sudoers.d/hacker <<-'EOF'
+	hacker ALL=(root) NOPASSWD: /usr/bin/zsh
+	EOF
 
-chmod 440 /etc/sudoers.d/hacker
+    chmod 440 /etc/sudoers.d/hacker
+else
+    passwd -d root
+fi
 
-chmod u+s /usr/bin/sudo
 passwd -d hacker
