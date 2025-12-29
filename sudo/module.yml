@@ -613,6 +613,8 @@ challenges:
       name: tee
     - id: telnet
       name: telnet
+      visibility:
+        start: "2067-04-20T12:00:00-07:00"
     - id: tex
       name: tex
     - id: tftp
